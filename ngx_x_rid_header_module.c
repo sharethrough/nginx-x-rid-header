@@ -32,7 +32,7 @@ ngx_int_t ngx_x_rid_header_get_variable(ngx_http_request_t *r, ngx_http_variable
   if ( uuid_create(&uuid) ) {
     return -1;
   }
-  if ( uuid_make(uuid, UUID_MAKE_V4) ) {
+  if ( uuid_make(uuid, UUID_MAKE_V1) ) {
     uuid_destroy(uuid);
     return -1;
   }
